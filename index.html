@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" >
+       <div class="nav"> 
+        <h2 >Weather Dashboard</h2> 
+       </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                   
+                <form>
+                    <p>Please Enter City Name</p>
+                
+                    <input type="text" name="city" placeholder="city" id="city" />
+                    <button id="search">Search</button>
+                    <ul id="city-list">
+                    
+                    </ul>
+                </form>
+                </div>
+                <div class="col-sm-9">
+                    <div class="weatherResult">
+                        <h3 class="name"></h3>
+                        <p class="temp"></p>
+                        <p class="humidity"></p>
+                        <p class="speed"></p>
+                        <p class="urIndex"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
