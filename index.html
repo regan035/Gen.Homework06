@@ -14,14 +14,13 @@
 <body>
     <nav class="navbar navbar-dark bg-dark" >
        <div class="nav"> 
-        <h2 >Weather Dashboard</h2> 
+        <div class="divtext"><h2 >Weather Dashboard</h2> </div>
        </div>
     </nav>
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                   
+                <div class="col-sm-3">   
                 <form>
                     <p>Please Enter City Name</p>
                 
@@ -33,18 +32,56 @@
                 </form>
                 </div>
                 <div class="col-sm-9">
-                    <div class="weatherResult">
-                        <h3 class="name"></h3>
+                    <div class="weatherResult ">
+                        <h4>Current Weather</h4>
+                        <h5 class="name"></h5>
+                        <p class="description"></p>
                         <p class="temp"></p>
                         <p class="humidity"></p>
                         <p class="speed"></p>
                         <p class="urIndex"></p>
+                    </div>
+                    <div class="forecast">
+                        <h4>5 Days Forecast</h4>
+                        <div class="row">
+                            <div class="card">
+                                <p class="date0"></p>
+                                <p class="icon0"></p>
+                                <p class="temp0"></p>
+                                <p class="humidity0"></p>
+                            </div>
+                            <div class="card">
+                                <p class="date1"></p>
+                                <p class="icon1"></p>
+                                <p class="temp1"></p>
+                                <p class="humidity1"></p>
+                            </div>
+                            <div class="card">
+                                <p class="date2"></p>
+                                <p class="icon2"></p>
+                                <p class="temp2"></p>
+                                <p class="humidity2"></p>
+                            </div>
+                            <div class="card">
+                                <p class="date3"></p>
+                                <p class="icon3"></p>
+                                <p class="temp3"></p>
+                                <p class="humidity3"></p>
+                            </div>
+                            <div class="card">
+                                <p class="date4"></p>
+                                <p class="icon4"></p>
+                                <p class="temp4"></p>
+                                <p class="humidity4"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
